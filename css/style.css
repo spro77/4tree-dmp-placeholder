@@ -1,8 +1,3 @@
-/*-----------------------------------------------------------------------------------
-	    4tree-dmp-marketing
-        Built with Blocs
------------------------------------------------------------------------------------*/
-
 body{
 	margin:0;
 	padding:0;
@@ -306,7 +301,39 @@ button{
 	padding: 3px 20px;
 }
 
+.a-cta {
+	display: inline-block;
+	padding: 9px 15px;
+	background-color: #3898EC;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	width: 236px;
+	height: 60px;
+	margin-bottom: 5%;
+	background: #4A8CDB;
+	border: 2px solid;
+	border-radius: 40px;
+	border-color: hsla(0, 0%, 100%, .6);
+	font-family: Lato, sans-serif;
+	color: hsla(0, 0%, 100%, .75);
+	font-size: 16px;
+	line-height: 37px;
+	text-transform: uppercase;
+}
 
+.a-cta:hover {
+  border-color: #fff;
+  box-shadow: -1px 16px 16px -13px rgba(0, 0, 0, .38);
+  color: #fff;
+}
+
+.a-cta:active {
+  background-image: -webkit-linear-gradient(270deg, #fff, #fff);
+  background-image: linear-gradient(180deg, #fff, #fff);
+  box-shadow: none;
+  color: #4a8cdb;
+}
 
 
 
@@ -386,6 +413,53 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .container{
 	max-width:1170px;
 }
+.a-container {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-image: url('/img/Group%203.png'), linear-gradient(180deg, #4a8cdb, #4a8cdb);
+	background-position: 50% 100%, 0px 0px;
+	background-repeat: no-repeat, repeat;
+	text-align: center;
+}
+
+.a-panel {
+  position: static;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 80%;
+  max-width: 724px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
+  float: none;
+  clear: none;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 21px 30px -7px rgba(0, 0, 0, .45);
+}
+
+.logo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.message {
+  padding: 30px;
+  font-family: Lato, sans-serif;
+  color: #606873;
+  font-size: 24px;
+  line-height: 2;
+  font-weight: 300;
+  text-align: left;
+}
+
+.name {
+  font-weight: 400;
+}
+
+
 .blocs-mobile-signup-text{
 	font-size:33px;
 }
