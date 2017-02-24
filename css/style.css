@@ -12,6 +12,15 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 #page-loading-blocs-notifaction{position: fixed;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;}
 
+/* = Chart
+-------------------------------------------------------------- */
+#c-wraper{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+
 /* = Blocs
 -------------------------------------------------------------- */
 
