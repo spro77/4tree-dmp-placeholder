@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	<title>Chart.js demo</title>
 	<script src='./js/Chart.min.js'></script>
+	<script src="js/matter.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
@@ -12,12 +13,12 @@
 	</div>
 	<script>
 		var ctx = document.getElementById("buyers").getContext('2d');
-		
+		var speed = 2500
 		var lingrad = ctx.createLinearGradient(0,0,0,300);
-		lingrad.addColorStop(0, 'rgba(0,156,238,.3)');
-		lingrad.addColorStop(1, 'rgba(0,156,238,0)');
-		var dataset1 = [2,4,3,8,4,5,6,10,8,14,15];
-		var dataset2 = [0,2,4,6,8,4,7,13,9,10,15];
+			lingrad.addColorStop(0, 'rgba(0,156,238,.3)');
+			lingrad.addColorStop(1, 'rgba(0,156,238,0)');
+		var dataset1 = [2,4,3,8,4,5,6,10,8,14,15],
+			dataset2 = [0,2,4,6,8,4,7,13,9,10,15];
 		var myChart = new Chart(ctx, {
 			type: 'line',
 			data: {
@@ -43,6 +44,10 @@
 				tooltips: {
 					enabled: false
 				},
+				animation: {
+					duration: speed,
+					easing: 'easeInOutQuad'
+				},
 				scales: {
 					xAxes: [{
 						display: false
@@ -59,7 +64,7 @@
 				myChart.data.datasets[0].data = dataset2;
 			} else {myChart.data.datasets[0].data = dataset1};
 			myChart.update();},
-		3000);
+		speed);
 	</script>
 </body>
 </html>
