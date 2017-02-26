@@ -11,10 +11,9 @@
 	<link rel="stylesheet" href="./css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
 	<script src='./js/Chart.min.js'></script>
+	<script type="text/javascript" charset="utf-8" src="Default.hyperesources/default_hype_generated_script.js?88330"></script>
     <title>The 4tree Data Management Platform</title>   
 </head>
 <body>
@@ -46,7 +45,7 @@
 				<h1 class=" mg-clear tc-cadet">
 					The 4tree Data Management Platform
 				</h1>
-				<h3 class=" mg-sm tc-cadet">
+				<h3 class="mg-md tc-cadet">
 					supports the whole analytics transformation within all industries
 				</h3>
 			</div>
@@ -59,19 +58,21 @@
 <div id="bloc-2" class="bloc tc-cadet fadeIn animated">
 	<div class="container">
 		<div class="row row-no-gutters">
-			<div class="col-sm-4">
-				<p class=" mg-md">
+			<div class="col-sm-5">
+				<p class="lead mg-md tc-cadet">
 					Subscribe to our newsletter to receive latest updates and new innvoations from our Data Management Platform.</p>
-				<div class="input-group input-group-lg">
-					<input type="email" class="form-control" placeholder="Enter your Email address">
-					<span class="input-group-btn">
-						<button class="btn btn-warning" type="button">Subscribe</button>
-					</span>
-				</div>
+				<form role="form">
+					<div class="form-group has-feedback">
+						<div class="input-group input-group-lg has-feedback">
+							<input type="email" class="form-control" required="required" name="email" placeholder="Enter your Email">
+							<span class="input-group-btn">
+								<button id="subscribe" class="btn btn-default" type="button">Subscribe</button>
+							</span>
+						</div>
+					</div>
+				</form>
 				<a href="confirmation-page.html" target="_self">confirmation page</a>
 			</div>
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4"></div>
 		</div>
 	</div>
 </div>
@@ -88,7 +89,6 @@
 <!-- ICONS -->
 <div id="bloc-3">	
 	<div id="default_hype_container" style="width:100%; height:600px; margin-top:-300px; margin-bottom:auto; position:relative; z-index:-999" aria-live="polite">
-		<script type="text/javascript" charset="utf-8" src="Default.hyperesources/default_hype_generated_script.js?88330"></script>
 	</div>
 </div>
 <!-- ICONS END -->
@@ -100,7 +100,7 @@
 			<div class="col-sm-3">
 				<img src="img/ico-datalake.svg" class="img-responsive center-block mg-md" />
 				<h4 class="text-center mg-sm tc-cadet ">
-					Create your Data Lake <br><br>
+					Create your Data Lake
 				</h4>
 				<div class="divider-h">
 					<span class="divider"></span>
@@ -124,7 +124,7 @@
 			<div class="col-sm-3">
 				<img src="img/ico-proto.svg" class="img-responsive center-block mg-md" />
 				<h4 class="text-center mg-sm tc-cadet ">
-					Create a simple Prototype <br><br>
+					Create a simple Prototype
 				</h4>
 				<div class="divider-h">
 					<span class="divider"></span>
@@ -136,7 +136,7 @@
 			<div class="col-sm-3">
 				<img src="img/ico-soft.svg" class="img-responsive center-block mg-md" />
 				<h4 class="text-center mg-sm tc-cadet ">
-					Develop a real piece of Software <br><br>
+					Develop a real piece of Software
 				</h4>
 				<div class="divider-h">
 					<span class="divider"></span>
@@ -163,7 +163,7 @@
 				<span class="divider"></span>
 			</div>
 			<img src="img/4tree-logo.svg" class="img-responsive center-block mg-sm" width="70"/>
-			<p class="text-center ">© 4tree, Gmbh 2015. All right reserved</p>
+			<p class="text-center ">© 4tree, Gmbh 2017. All right reserved</p>
 		</div>
 	</div>
 </div>
@@ -218,7 +218,6 @@
 			}
 		});
 		setInterval(function(){
-			console.log(myChart.data.datasets[0].data);
 			if (myChart.data.datasets[0].data === dataset1) {
 				myChart.data.datasets[0].data = dataset2;
 			} else {myChart.data.datasets[0].data = dataset1};
